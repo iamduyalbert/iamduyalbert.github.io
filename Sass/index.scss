@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Dancing Script 1', cursive;
+   
 }
 a{
     text-decoration: none;
@@ -22,11 +23,13 @@ body{
        justify-content: center;
        padding: 10px 0 5px 0;
        margin-bottom: 20px;
+      
        .form_user_img{
            height: 170px;
            width: 170px;
            border-radius: 50%;
            overflow: hidden;
+           border: 1px solid rgb(157, 3, 150);
            img{
                object-fit: cover;
                width: 100%;
@@ -35,17 +38,22 @@ body{
 
        }
        .form_user_name{
+        // font-family: 'Dancing Script', cursives;
+        font-family: 'Dancing Script', cursive;
            min-width: 30%;
-           padding: 0 10px 0 25px;
+           padding: 0 10px 0 15px;
            color: white;
-           span{
-            font-size: 24px;
+           font-size: larger;
+           h3{
+            font-family: 'Dancing Script 1', cursive;
+            font-size: large;
             color: #FFFFFF;
             text-shadow: 0 0 5px rgba(255, 255, 255, 0.418), 0 0 10px rgba(255, 255, 255, 0.358), 0 0 15px rgba(255, 255, 255, 0.39), 0 0 20px #4aff1825, 0 0 30px #4aff1841, 0 0 40px #4aff1849, 0 0 55px #4aff1828, 0 0 75px #49ff18;
            }
        }
     }
     .form_item{
+        font-family: 'Dancing Script 1', cursive;
         width: 95%;
         margin: auto;
         background-color: rgb(27, 25, 25);
@@ -79,19 +87,16 @@ body{
     .form{
 
         .form_user{
-            // background: #B00BA5;
-            // background: -moz-linear-gradient(-45deg, #B00BA5 0%, #08010B 50%, #024BA6 100%);
-            // background: -webkit-linear-gradient(-45deg, #B00BA5 0%, #08010B 50%, #024BA6 100%);
-            // background: linear-gradient(135deg, #B00BA5 0%, #08010B 50%, #024BA6 100%);
+            padding: 15px 0 0 5px;
             .form_user_img{
                 height: 100px;
                 width: 100px;
             }
             .form_user_name{
-                font-size: 15px ;
                 span{
-                    font-size: 15px ;
-                }
+                    padding: 0 0 0 0px;
+                    font-size: 15px;   
+                   }
             }
             
         }
@@ -103,14 +108,13 @@ body{
             -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 13px 17px 29px 26px rgba(39,39,39,0.49); 
 box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 13px 17px 29px 26px rgba(39,39,39,0.49);
             .form_item_name{
-                font-size: 10px;
-                width: 30%;
+                font-size: 15px;
+                width: 50%;
+                word-wrap: break-word;
             }
             
         }
     }
-    .fixed{
-        position: absolute;
-        width: 135px;
-    }
+    
+    
 }
