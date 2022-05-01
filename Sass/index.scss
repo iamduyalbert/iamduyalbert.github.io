@@ -11,6 +11,9 @@ a{
     text-decoration: none;
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #2D032B;
     background: -moz-linear-gradient(-45deg, #2D032B 0%, #500A6D 50%, #0373FF 100%);
