@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #050324;
+  position: relative;
+}
+
+body .imgtet {
+  margin-top: 50px;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .imgtet .left {
+  position: fixed;
+  width: 20%;
+  height: 60vh;
+  left: 0;
+  background-image: url(../Icon/longdenleft.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+
+body .imgtet .right {
+  position: absolute;
+  position: fixed;
+  width: 20%;
+  right: 0;
+  height: 60vh;
+  background-image: url(../Icon/longdenright.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+
+.form {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form .form_user_background {
+  height: 400px;
+  width: 60%;
+  background-color: #3f3e3e;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: white;
+  margin: auto;
+  background-image: url(../Icon/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.form .form_user {
+  position: relative;
+  width: 75%;
+  min-height: 140px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form .form_user .box {
+  position: absolute;
+  top: -85px;
+  height: 184px;
+  width: 184px;
+  border-radius: 50%;
+  background-color: #050324;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .form_user .box .form_user_img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .form_user .box .form_user_img::before {
+  content: '';
+  position: absolute;
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B7507D), to(#4C49B6));
+  background: linear-gradient(#B7507D, #4C49B6);
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+.form .form_user .box .form_user_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.form .form_user_name {
+  position: relative;
+  word-wrap: break-word;
+  font-family: 'Dancing Script', cursive;
+  width: 75%;
+  margin: -35px auto 20px auto;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.form .form_user_name .fa-check {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #1872e9;
+  border-radius: 100%;
+}
+
+.form .form_button {
+  font-family: 'Cardo', serif;
+  padding: 7px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.form .form_button .button_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  height: 50px;
+  width: 180px;
+  color: white;
+  background-color: #3982E4;
+}
+
+.form .form_button .button_item:hover {
+  background-color: #5b94de;
+}
+
+.form .form_item {
+  position: relative;
+  font-family: 'Cardo', serif;
+  font-weight: 100;
+  width: 65%;
+  margin: auto;
+  background-color: rgba(7, 20, 90, 0.421);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.form .form_item_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.form .form_item_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form .form_item_name {
+  color: white;
+  min-width: 25%;
+  padding: 0 10px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .form_item_name .fixed {
+  word-wrap: break-word;
+}
+
+.form .form_item_name o {
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  background-color: #ffffff18;
+}
+
+.form .form_item_name_button {
+  width: 50%;
+  height: 100%;
+  font-size: 40px;
+  font-weight: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.form .form_item_name_button .icon_copy:active {
+  color: #33fa36;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.form .form_item_name_button .button-23 {
+  background-color: #ff000000;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 20x;
+  text-align: center;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 19px 38px 0px, rgba(0, 0, 0, 0.22) 0px 15px 12px 0px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 19px 38px 0px, rgba(0, 0, 0, 0.22) 0px 15px 12px 0px;
+}
+
+.form .form_item_name_button .button-23:active {
+  color: #02dc2a;
+  border: 1px solid #02dc2a;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.form .fixed {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .imgtet {
+    display: none;
+  }
+  .imgtet .left {
+    display: none;
+  }
+  .imgtet .right {
+    display: none;
+  }
+  .form .form_user_background {
+    width: 100%;
+    height: 200px;
+  }
+  .form .form_user {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form .form_user .box {
+    height: 152px;
+    width: 152px;
+  }
+  .form .form_user .box .form_user_img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form .form_user .box .form_user_img::before {
+    content: '';
+    position: absolute;
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B7507D), to(#4C49B6));
+    background: linear-gradient(#B7507D, #4C49B6);
+    -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+  }
+  .form .form_button .button_item {
+    font-size: 20px;
+    height: 40px;
+    width: 180px;
+  }
+  .form .form_user_name {
+    width: 100%;
+    margin-top: -55px;
+  }
+  .form .form_user_name .fa-check {
+    display: none;
+  }
+  .form .form_user_name h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .form .form_user_name h3 {
+    font-size: 20px !important;
+    font-family: 'Cardo', serif;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .form .form_item {
+    width: 95%;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .form .form_item .form_item_name {
+    font-size: 15px;
+    width: 50%;
+    word-wrap: break-word;
+  }
+  .form .form_item .form_item_name_button {
+    font-size: 30px;
+    margin-left: -50px !important;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .form .form_user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form .form_user .form_user_img {
+    height: 150px;
+    width: 150px;
+  }
+  .form .form_user_name h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  .form .form_user_name h3 {
+    font-size: 20px !important;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .form .form_button .button_item {
+    font-size: 16px;
+    height: 35px;
+    width: 155px;
+  }
+  .form .form_item {
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .form .form_item .form_item_name {
+    font-size: 12px;
+    width: 50%;
+    word-wrap: break-word;
+  }
+  .form .form_item .form_item_name_button {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
